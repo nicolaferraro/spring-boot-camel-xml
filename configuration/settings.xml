@@ -25,7 +25,20 @@
       <id>fuse.repos</id>
 
       <repositories>
-        
+
+        <repository>
+          <id>indy</id>
+          <name>Indy</name>
+          <url>http://indy.cloud.pnc.engineering.redhat.com/api/group/builds-untested+shared-imports+public/</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
+
         <repository>
           <id>maven.central</id>
           <name>Maven Central</name>
@@ -38,8 +51,8 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </repository>
- 
-        
+
+
         <repository>
           <id>redhat.ga</id>
           <name>Red Hat General Availability Repository</name>
@@ -52,8 +65,8 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </repository>
- 
-        
+
+
         <repository>
           <id>redhat.ea</id>
           <name>Red Hat Early Access Repository</name>
@@ -66,11 +79,40 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </repository>
- 
+
+
+        <repository>
+          <id>jboss.ea</id>
+          <name>JBoss Early Access Repository</name>
+          <url>http://repository.jboss.org/nexus/content/groups/ea</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
+
+
+
       </repositories>
 
       <pluginRepositories>
-        
+
+        <pluginRepository>
+          <id>indy</id>
+          <name>Indy</name>
+          <url>http://indy.cloud.pnc.engineering.redhat.com/api/group/builds-untested+shared-imports+public/</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </pluginRepository>
+
         <pluginRepository>
           <id>maven.central</id>
           <name>Maven Central</name>
@@ -83,8 +125,8 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </pluginRepository>
- 
-        
+
+
         <pluginRepository>
           <id>redhat.ga</id>
           <name>Red Hat General Availability Repository</name>
@@ -97,8 +139,8 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </pluginRepository>
- 
-        
+
+
         <pluginRepository>
           <id>redhat.ea</id>
           <name>Red Hat Early Access Repository</name>
@@ -111,7 +153,22 @@
             <updatePolicy>never</updatePolicy>
           </releases>
         </pluginRepository>
-        
+
+
+        <pluginRepository>
+          <id>jboss.ea</id>
+          <name>JBoss Early Access Repository</name>
+          <url>http://repository.jboss.org/nexus/content/groups/ea</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </pluginRepository>
+
+
       </pluginRepositories>
     </profile>
   </profiles>
